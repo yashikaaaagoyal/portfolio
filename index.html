@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Yashika.png" class="logo" width="250px">
+                <ul class="navbar" id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="info">
+                <p>Frontend Developer</p>
+                <h1>Hi. I'm <span>Yashika</span> <br>Goyal from India.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg" width="500px">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>I'm a front end developer based in India. I intend to improve user experience, using
+                        HTML, CSS, Bootstrap, Javascript, JQuery, etc. I've made various projects using
+                        these technologies. I'am a GATE 2023 qualified student.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="links" onclick="openTab('projects')">Projects</p>
+                        <p class="links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-info active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </div>
+                    <div class="tab-info" id="projects">
+                        <ul>
+                            <li>My Portfolio Website</li>
+                            <li>Calculator Website</li>
+                            <li>Weather Website</li>
+                            <li>Ecommerce Landing Page</li>
+                            <li>A To-Do List</li>
+                        </ul>
+                    </div>
+                    <div class="tab-info" id="education">
+                        <ul>
+                            <li>2020-2024<br>Btech CSE<br>Dronacharya College of Engineering</li>
+                            <li>2019-2020<br>12th Class<br>K. R. Mangalam World School</li>
+                            <li>2017-2018<br>10th Class<br>Sumermal Jain Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skill">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <h2>HTML, CSS, Javascript</h2>
+                    <p>These are basic front end development languages, used widely by developers.</p>
+                    <a href="#" class="btn">Learn more...</a>
+                </div>
+                <div>
+                    <h2>Bootstrap</h2>
+                    <p>It is the most popular framework of CSS. It was introduced
+                        to implement some functions of CSS easily.
+                    </p>
+                    <a href="#" class="btn">Learn more...</a>
+                </div>
+                <div>
+                    <h2>JQuery</h2>
+                    <p>It is the most popular Javascript framework. It is used to implement complex Javascript
+                        functions in a single line of code.
+                    </p>
+                    <a href="#" class="btn">Learn more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="todo.jpg">
+                    <div class="layer">
+                        <h3>A To-Do List</h3>
+                        <p>It helps us create a to-do list for our daily tasks, where user
+                            can add tasks, and remove them when they are done.
+                        </p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="weather.jpg">
+                    <div class="layer">
+                        <h3>A Weather Website</h3>
+                        <p>It is a website which tells the current temperature, humidity, wind speed
+                            of a particular place at a time.
+                        </p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="ecom.jpg">
+                    <div class="layer">
+                        <h3>Ecommerce Website Home</h3>
+                        <p>It is the landing page for an ecommerce website, which sells sports related products.</p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="calculator.jpg">
+                    <div class="layer">
+                        <h3>Calculator Website</h3>
+                        <p>It is a calculator which helps us perform all the mathematical operations.</p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-1">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-envelope"></i>yashika0715@gmail.com</p>
+                    <p><i class="fa fa-phone"></i>9971480084</p>
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                    <a href="RESUME.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-2">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your name here" required>
+                        <input type="email" name="email" placeholder="Your email-id here" required>
+                        <textarea rows="6" name="message" placeholder="Your message here"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwJNiUsjjDhjSM_JUMWnJLXqFVsUfikQudH1TlsY7ko2JcLUKIE7SWTbvpde7RrNL9G/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully."
+                setTimeout(function(){
+                    msg.innerHTML= " "
+                }, 5000)
+                form.reset() 
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
